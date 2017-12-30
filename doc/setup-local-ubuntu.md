@@ -40,6 +40,7 @@ Installing [rbenv](https://github.com/sstephenson/rbenv) using a Installer
 
 Install Ruby through rbenv:
 
+    RUBY_CONFIGURE_OPTS="--disable-install-doc --with-openssl-dir=/usr/local/ssl --enable-shared" rbenv install 2.2.1 -v
     rbenv install 2.2.1
     rbenv global 2.2.1
 
@@ -165,6 +166,8 @@ More details to visit [pusher official website](http://pusher.com)
     vim config/currencies.yml
 
 **Config database settings**
+
+    https://github.com/peatio/peatio/issues/590
 
     vim config/database.yml
 
